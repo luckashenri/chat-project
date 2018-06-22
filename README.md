@@ -1,5 +1,6 @@
 ## pré - requisitos
-You will need to have node.js and npm installed.
+node<br>
+npm
 
 ## Para instalar
 
