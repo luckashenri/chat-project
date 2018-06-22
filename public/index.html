@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<head>
+  <link href='/index.css' rel='stylesheet' />
+  <script src='http://code.jquery.com/jquery-1.6.1.min.js'></script>
+  <script src='/socket.io/socket.io.js'></script>
+  <script src='/index.js'></script>
+</head>
+
+<body>
+  <h1>Chat com Node.js + Socket.IO</h1>
+  <div id="chat">
+    <div id="nickname">
+      <form class="wrap" id="set-nickname">
+        <label for="nick">Manda aí um apelidão maneiro.</label>
+        <input id="nick" name="nick" type="text" placeholder="Apelido na sala" />
+        <p id="nickname-err">Esse apelido já está em uso amigão</p>
+      </form>
+    </div>
+    <div id="connecting">
+      <div class="wrap">Conectando ao servidor Socket.io...</div>
+    </div>
+    <div id="messages">
+      <div id="nicknames"></div>
+      <div id="lines"></div>
+    </div>
+    <form id="send-message">
+      <input id="message" type="text" />
+      <div>
+
+        <div class="filebutton">Enviar Imagem
+          <input type="file" id="imagefile" accept="image/*">
+        </div>
+        <button value="" class="send">Send</button>
+      </div>
+    </form>
+</body>
+
+</html>
